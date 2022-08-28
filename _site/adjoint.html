@@ -219,7 +219,7 @@
 
 <script type="text/javascript">
 function fun() {
-  document.getElementById('man').innerHTML="";
+
   document.getElementById('man2').innerHTML="";
     document.getElementById('man1').innerHTML="";
 
@@ -286,10 +286,9 @@ document.getElementById('a2').innerHTML="Adjoint of given Matrix is: ";
 
 
     }
-    document.getElementById("man").appendChild(tr);
 
   }
-document.getElementById('a3').innerHTML="Inverse of given Matrix is: ";
+
 
 }
 
@@ -367,7 +366,7 @@ text-shadow: 5px 5px 4px #blue;
       <div class="main-heading">
 
 
-       <h2 style="color:white;" ><strong>Adjoint Matrix</strong></h2>
+       <h2 style="color:white;" ><strong>Adjoint Matrices</strong></h2>
       </div>
 
   <p>The inverse of matrix is another matrix, which on multiplication with the given matrix gives the multiplicative identity. For a matrix A, its inverse is A<sup>-1</sup>, and A.A<sup>-1</sup> = A<sup>-1</sup>·A = I, where I is the identity matrix. The matrix whose determinant is non-zero and for which the inverse matrix can be calculated is called an invertible matrix.</p>
@@ -386,7 +385,7 @@ text-shadow: 5px 5px 4px #blue;
 </p>
 <img src="https://mathworld.wolfram.com/images/equations/MatrixInverse/NumberedEquation4.svg" width="400" height="300">
 
-</p>
+
 <h1>Enter the order of matrix</h1>
 <div class="input">
   <input id="n"  type="text" oninput="func()"name="" value="">
@@ -404,18 +403,16 @@ text-shadow: 5px 5px 4px #blue;
 <div class="paragraph">
 
 
-  <h1 id="a1"></h1>
+  <h4 id="a1"></h4>
   <table align="center" id="man1" class="matrix">
 
   </table>
-  <h1 id="a2"></h1>
+  <h4 id="a2"></h4>
   <table align="center" id="man2" class="matrix">
 
   </table>
-  <h1 id="a3"></h1>
-  <table align="center" id="man" class="matrix">
 
-  </table>
+
 
 </div>
 

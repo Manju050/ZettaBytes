@@ -1,7 +1,24 @@
 ---
 layout: default
-title: Inerse of Matrix
+title: inverse Matrix
 ---
+
+<style>
+
+.grid-container {
+  display: grid;grid-template-columns: auto auto auto auto;background-color: ;padding: 5px;width: 10px;
+
+}
+.grid-item {
+
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+</style>
+
 <script type="text/javascript">
   function func() {
     var n=document.getElementById('n').value;
@@ -113,22 +130,79 @@ document.getElementById('a3').innerHTML="Inverse of given Matrix is: ";
 
 
 </script>
+<style media="screen">
+
+
+.matrix {
+       position: relative;
+   }
+   .matrix:before, .matrix:after {
+       content: "";
+       position: absolute;
+       top: 0;
+       border: 4px solid black;
+       width: 6px;
+       height: 100%;
+   }
+   .matrix:before {
+       left: -6px;
+       border-right: 0;
+   }
+   .matrix:after {
+       right: -6px;
+       border-left: 0;
+   }
+  .mmm
+   {
+
+     padding:23px;
+     font-weight:bold;
+
+
+   }
+   h3,h1,P,STRONG{
+
+     color: black;
+margin: auto;
+text-shadow: 5px 5px 4px #blue;
+
+
+   }
+   td{
+     color:black;
+
+   }
+
+   .grid-item {
+
+     border: 1px solid  black;
+     padding: 5px;
+     font-size: 20px;
+     align:center;
+
+
+   }
+   .grid-container {
+     padding: 5px;width: 10px;
+     margin: 5px 400px;
+
+
+   }
+   img{
+     background-color: white;
+     opacity: inherit;
+   }
 
 
 
+</style>
+ <div class="right">
+   <div class="main-heading">
 
 
-
-     <div class="right">
-
-  <div class="main-heading">
-
-
-   <h2 style="color:white;" ><strong>Inverse of matrix</strong></h2>
-  </div>
+    <h2 style="color:white;" ><strong>Inverse of  Matrix</strong></h2>
+   </div>
   <div class="paragraph">
-
-
     <p>The inverse of matrix is another matrix, which on multiplication with the given matrix gives the multiplicative identity.
       For a matrix A, its inverse is A<sup>-1</sup>, and A.A<sup>-1</sup> = A<sup>-1</sup>·A = I, where I is the identity matrix. The matrix whose determinant is non-zero and for which the inverse matrix can be calculated is called an invertible matrix.</p>
     <p>The inverse matrix formula for a matrix A is given as,
@@ -149,14 +223,14 @@ document.getElementById('a3').innerHTML="Inverse of given Matrix is: ";
   <br>
   <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0fb7845af355c550d44020e52699069c044126a9" alt="">
 
+<p>The inverse of the matrix A is
+</p>
+<img src="https://mathworld.wolfram.com/images/equations/MatrixInverse/NumberedEquation4.svg" width="400" height="300">
 
-<br><br>
-
-<h3>Enter the Order of Matrix</h3>
-<br
-
+</p>
+<h1>Enter the order of matrix</h1>
 <div class="input">
-  <input id="n"  type="text" oninput="func()">
+  <input id="n"  type="text" oninput="func()"name="" value="">
 
 </div>
 
@@ -165,19 +239,27 @@ document.getElementById('a3').innerHTML="Inverse of given Matrix is: ";
 
 </div>
 
-</div>
-
 
 <a class="submit" onclick="fun()"href="#footer">submit</a>
-<h4 id="a1"></h4>
-<table align="center" id="man1" class="matrix">
 
-</table>
-<h4 id="a2"></h4>
-<table align="center" id="man2" class="matrix">
+<div class="paragraph">
 
-</table>
-<h4 id="a3"></h4>
-<table align="center" id="man" class="matrix">
 
-</table>
+  <h4 id="a1"></h4>
+  <table align="center" id="man1" class="matrix">
+
+  </table>
+  <h4 id="a2"></h4>
+  <table align="center" id="man2" class="matrix">
+
+  </table>
+  <h4 id="a3"></h4>
+  <table align="center" id="man" class="matrix">
+
+  </table>
+
+</div>
+
+<footer id="footer"></footer>
+
+</div>
