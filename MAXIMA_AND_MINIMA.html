@@ -2,12 +2,18 @@
 layout: default
 title: Maxima and Minima of a Function
 ---
+<style media="screen">
 
+</style>
 
  <!-- assuming you've saved the file in the root -->
 <script type="text/javascript">
+  var str="";
   function func()
   {
+    const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
+    dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
+
 
 var place=document.getElementById('1').value;
 document.getElementById("ma").innerHTML="";
@@ -83,9 +89,9 @@ document.getElementById("e").innerHTML="On equating f'(x) to 0 <br><br>"+a+" = 0
       <a onclick="func()" href="#footer" class="submit">Submit</a>
       <br>
       <br><br>
-      <h4>OUTPUT SECTION:</h4>
+      <h3 id="out" style="font-weight: bold;" >OUTPUT SECTION:</h3>
 
-      <div class="paragraph">
+      <div class="paragraphout">
         <br>
         <h5 id="q"></h5>
         <h5 id="ik" ></h5><br>

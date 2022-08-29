@@ -8,11 +8,11 @@ title: Trace of a Matrix
 
 </style>
 <script type="text/javascript">
-<!--java script code for creating interactive grids-->
-  function func() {
+  var str="";
+function func() {
     var n=document.getElementById('n').value;
     n=parseInt(n);
-    var str="";
+
     document.getElementById('ma').innerHTML="";
     for(let i=0;i<n;i++)
     {
@@ -44,6 +44,9 @@ title: Trace of a Matrix
 <script type="text/javascript">
 //java script code for taking the input from grids and applying logic.
 function fun() {
+  const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
+  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
+
 
   document.getElementById('man').innerHTML="";
   var n=document.getElementById('n').value;
@@ -128,7 +131,12 @@ document.getElementById('a2').innerHTML="The TRACE of the matrix is : "+TRACE;
 
 
   <a class="submit"onclick="fun()"href="#footer" class="btn btn-primary">submit</a>
-  <div class="paragraph">
+  <br>
+  <br>
+  <h3 id="out" style="font-weight: bold;" >OUTPUT SECTION:</h3>
+  <br>
+  <br>
+  <div class="paragraphout">
     <br>
     <h3 id="a1"></h3>
     <table align="center" id="man" class="matrix">

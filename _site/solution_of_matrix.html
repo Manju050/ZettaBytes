@@ -175,8 +175,14 @@
   </style>
 
   <script type="text/javascript">
+    var str="";
     // javascript program to find rank of a matrix
     function functionName() {
+
+      const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
+      dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
+
+
     x1=document.getElementById('1').value;x1=parseInt(x1);
     y1=document.getElementById('2').value;y1=parseInt(y1);
     z1=document.getElementById('3').value;z1=parseInt(z1);
@@ -365,7 +371,7 @@
     <p>
       There can be a single solution, an infinite number of solutions, or no solution to a system of two linear equations. The number of solutions in a system of equations can be used to differentiate it.
 
-      A system is said to be <<b>consistent</b> if it has a minimum of one solution.
+      A system is said to be <b>consistent</b> if it has a minimum of one solution.
 
       It is independent if a consistent system has only one solution.<p/>
 
@@ -422,8 +428,9 @@ then the system AX = B is inconsistent and has no solution.
 
 
   <a class="submit" onclick="functionName()"href="#footer" class="btn btn-primary">submit</a>
-
-<div class="paragraph">
+<br><br>
+<h3 id="out" style="font-weight: bold;" >OUTPUT SECTION:</h3>
+<div class="paragraphout">
                                     <!-- OUTPUT  -->
   <br>
   <br>

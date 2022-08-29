@@ -2,9 +2,17 @@
 layout: default
 title: Mean Value Theoram
 ---
-<script src="all.min.js"></script>  <!-- assuming you've saved the file in the root -->
+<script src="all.min.js"></script>
+  <!-- assuming you've saved the file in the root -->
+  <style media="screen">
+
+  </style>
 <script type="text/javascript">
+  var str="";
   function func(){
+    const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
+    dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
+
 
 var place=document.getElementById('1').value;
 var x=document.getElementById('2').value;
@@ -68,8 +76,8 @@ document.getElementById("d").innerHTML= "after solving we get: possible values o
 <a onclick="func()" href="#footer" class="submit">Submit</a>
 <br>
 <br>
-<h3>OUTPUT SECTION</h3>
-    <div class="paragraph">
+<h3 id="out" style="font-weight: bold;" >OUTPUT SECTION:</h3>
+    <div class="paragraphout">
       <br>
     <h5 id="a"></h5><br>
     <h5 id="b"></h5><br>

@@ -10,7 +10,7 @@
     </script>
     <script src="all.min.js"></script>
     <meta charset="utf-8">
-    <title>Addition</title>
+    <title>Derivative of function</title>
   </head>
   <body>
 
@@ -170,7 +170,11 @@
        }
        </script>
          </div>
-    <script type="text/javascript">
+    <style media="screen">
+
+</style>
+<script type="text/javascript">
+  var str="";
   function func(){
 
 var place=document.getElementById('1').value;
@@ -185,6 +189,8 @@ document.getElementById("b").innerHTML="After differentiating the function we ge
 document.getElementById("c").innerHTML= `Now substituing the value of x=${x} <br>`+`<span style="color:blaxk;font-style: bold;">${a.toString().replace(/x/g, x)}</span>`;
 document.getElementById("d").innerHTML= "After solving we get: "+`<span style="color:black;font-style: bold;">${(e.text()).slice(0,5)}</span>`;
 
+const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
+dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
 
 
 
@@ -209,7 +215,7 @@ document.getElementById("d").innerHTML= "After solving we get: "+`<span style="c
     <img src="https://miro.medium.com/max/2776/1*1wUD_t4Ufp8Ef9NQzcydWQ.png" width="300" height="200" alt=""> <br>
      <div class="paragraph-1">
     <strong>consider f(x)=2x**3+2 <br>
-    Then derivative of f(x) is, <br></p></strong></div>
+    Then derivative of f(x) is, <br></strong></div>
     <img src="https://study.com/cimages/multimages/16/firstderiv2.png" alt="">
    <br>
    <br>
@@ -229,8 +235,8 @@ document.getElementById("d").innerHTML= "After solving we get: "+`<span style="c
 <br>
 <br>
 <br>
-<h4>OUTPUT SECTION:</h4>
-  <div class="paragraph">
+<h4 id="out" style="font-weight: bold; " >OUTPUT SECTION:</h4>
+  <div class="paragraphout">
     <br>
     <h5 id="a"></h5>
     <br>

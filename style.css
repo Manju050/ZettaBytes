@@ -17,10 +17,12 @@
    .matrix:before {
        left: -6px;
        border-right: 0;
+       display: none;
    }
    .matrix:after {
        right: -6px;
        border-left: 0;
+        display: none;
    }
   .mmm
    {
@@ -93,6 +95,18 @@ transition: opacity 0.15s;
   padding-right: 30px;
   margin-right:40px;
   text-align:left;
+}
+.paragraphout{
+  background-color: lightgrey;
+  margin-top:25px;
+  font-size: 18px;
+  line-height: 28.5px;
+  color:black;
+  padding-left: 15px;
+  padding-right: 30px;
+  margin-right:40px;
+  text-align:left;
+  display: none;
 }
 .paragraph-2{
   margin-top:20px;
@@ -452,4 +466,7 @@ font-weight: bold;
   background-color:white;
 
   flex:4;
+}
+#out{
+  display:none;
 }

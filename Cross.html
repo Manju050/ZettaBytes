@@ -2,8 +2,13 @@
 layout: default
 title: Cross product of two vectors
 ---
+<style media="screen">
+
+</style>
+
 <script src="all.min.js"></script>  <!-- assuming you've saved the file in the root -->
 <script type="text/javascript">
+  var str="";
   function func(){
 
 var place1=document.getElementById('1').value;
@@ -20,6 +25,8 @@ var a = nerdamer(`cross(${x.toString()}, ${y.toString()})`).evaluate();
 console.log(a.toString());
 
 
+const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
+dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
 
 
 
@@ -94,8 +101,10 @@ document.getElementById("d").innerHTML= "A x B :"+a.toString();
               <a onclick="func()" href="#footer" class="submit">Submit</a>
 
 <br><br>
-<h4>OUTPUT SECTION:</h4>
-<div class="paragraph">
+<h4 id="out" style="font-weight: bold;"  >OUTPUT SECTION:</h4>
+<div class="paragraphout">
+  <br>
+  <br>
   <h5 id="a"></h5>
   <br>
   <h5 id="b"></h5><br>

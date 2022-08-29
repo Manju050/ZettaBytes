@@ -6,18 +6,17 @@ title: Addition of two matrices
 <style media="screen">
 
 </style>
-<script type="text/javascript">
-  document.getElementById('mat1').style.display="none";
 
-</script>
 
 <!--java script code for creating interactive grids-->
 <script type="text/javascript">
+  var str="";
   function func() {
+
 
     var n=document.getElementById('n').value;
     n=parseInt(n);
-    var str=""; //defining the string str  to set auto for grid container according to the order of matrix
+     //defining the string str  to set auto for grid container according to the order of matrix
     document.getElementById("matrix1").innerHTML="";
     for(let i=0;i<n;i++)
     {
@@ -68,7 +67,11 @@ document.getElementById("yy").innerHTML="Enter the Second Matrix B";
 
 <script type="text/javascript">
 //java script code for taking the input from grids and applying logic.
+
 function fun() {
+  const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
+  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
+
   document.getElementById("add").innerHTML="";
     document.getElementById("mat1").innerHTML="";
       document.getElementById("mat2").innerHTML="";
@@ -103,6 +106,8 @@ function fun() {
 
 document.getElementById('show_matrix1').innerHTML="<span style='margin-left:10em;color:black;font-style: bold'>"+"First matrix A=";
 document.getElementById('show_matrix2').innerHTML="<span style='margin-left:10em;color:black;font-style: bold'>"+"Second matrix B=";
+
+
 //now creating four matrix type  table formats for matrix1,matrix2,add and mul matrices to display in output
 for (let i=0;i<n;i++)
 {
@@ -213,8 +218,8 @@ var res_add=math.add(str1,str2);//using math.add for adding two matrices.
 <a onclick="fun()" href="#footer" class="submit">Submit</a>
 <br>
 <br>
-<h3>OUTPUT SECTION :</h3>
-<div class="paragraph">
+<h3 id="out" style="font-weight: bold;" >OUTPUT SECTION:</h3>
+<div class="paragraphout">
   <br>
   <br>
   <h3 id="show_matrix1"></h3>

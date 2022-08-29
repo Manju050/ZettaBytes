@@ -3,10 +3,15 @@ layout: default
 title: Dot
 ---
 
+<style media="screen">
 
+</style>
 <script src="all.min.js"></script>  <!-- assuming you've saved the file in the root -->
 <script type="text/javascript">
+  var str="";
   function func(){
+    const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
+    dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
 
 var place1=document.getElementById('1').value;
 var place2=document.getElementById('2').value;
@@ -84,8 +89,8 @@ document.getElementById("c").innerHTML= "After dot product we get answer= "+a.to
 
 
     <br>
-    <h4>OUTPUT SECTION:</h4>
-    <div class="paragraph">
+    <h4 id="out" style="font-weight: bold;"  >OUTPUT SECTION:</h4>
+    <div class="paragraphout">
       <br>
     <h5 id="a"></h5><br>
     <h5 id="b"></h5><br>

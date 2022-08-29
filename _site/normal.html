@@ -170,9 +170,17 @@
        }
        </script>
          </div>
-        <script type="text/javascript">
+    <style media="screen">
+
+</style>
+    <script type="text/javascript">
+      var str="";
       function func()
       {
+        const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
+        dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
+
+
         var fun = document.getElementById("proper").value;
         document.getElementById('y_value').innerHTML="The given function is  "+ fun.toString()+"<br><br>"+"On differentiating the Function we get,";
 
@@ -219,9 +227,10 @@
           </div><br>
           <a onclick="func()" href="#footer" class="submit">Submit</a>
 <br><br>
-<h4>OUTPUT SECTION:</h4>
+<h3 id="out" style="font-weight: bold;" >OUTPUT SECTION:</h3>
+<br>
 
-          <div class="paragraph">
+          <div class="paragraphout">
 
               <br>
               <h4 id="y_value"></h4><br>
