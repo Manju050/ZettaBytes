@@ -6,7 +6,10 @@ title: Addition of two matrices
 <style media="screen">
 
 </style>
+<script type="text/javascript">
+  document.getElementById('mat1').style.display="none";
 
+</script>
 
 <!--java script code for creating interactive grids-->
 <script type="text/javascript">
@@ -67,7 +70,6 @@ document.getElementById("yy").innerHTML="Enter the Second Matrix B";
 //java script code for taking the input from grids and applying logic.
 function fun() {
   document.getElementById("add").innerHTML="";
-    document.getElementById("mul").innerHTML="";
     document.getElementById("mat1").innerHTML="";
       document.getElementById("mat2").innerHTML="";
   var n=document.getElementById('n').value;
@@ -244,8 +246,6 @@ var res_add=math.add(str1,str2);//using math.add for adding two matrices.
   <!--for multiplication matrix-->
 <br>
 <br>
-  <table align="center" id="mul" class="matrix">
 
-  </table>
 
 </div>
