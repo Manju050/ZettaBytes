@@ -1,0 +1,115 @@
+---
+layout: default
+title: About us
+---
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init('a7t584C5XphlyzNlC');
+    })();
+</script>
+<script type="text/javascript">
+    function sendMail() {
+      alert('Thanks...your Feedback is sent!');
+        emailjs.send("service_qikqwrs","template_1kht2ty",{
+            from_name: document.getElementById("fullName").value,
+            email_id: document.getElementById("email_id").value,
+            message: document.getElementById("message").value,
+        });
+    }
+</script>
+    <div class="right">
+
+   <div class="main-heading">
+
+
+   <h2 style="color:white;" ><strong>ABOUT US</strong></h2>
+   </div>
+   <br>
+   <br>
+   <div class="card" style="width: 40rem;">
+<div class="card-body">
+    <h3 class="card-title">G R Manjunath</h3>
+    <br>
+    <p class="card-text">3<sup>rd</sup> year, Electronics and communiaction Engineering, <br>Sri Venkateswara University College of Engineering,<br>Tirupati.</p>
+<h4 class="card-title">Work:</h4>
+<p class="card-text"> <strong>Team Leader.</strong><br>Written JavaScript code for Level-1 and Level-2 total 18 Problems. <br> Integrated total work using <strong>Jekyll Software.</strong> <br>Worked upon creating<strong> Dynamic Grids</strong> to enter matrix elements as well as worked upon how to display matrices in output section.</p>
+
+  </div>
+</div>
+<br>
+<br>
+<div class="card" style="width: 40rem;">
+<div class="card-body">
+ <h3 class="card-title">G Purandhar</h3>
+ <br>
+ <p class="card-text">3<sup>rd</sup> year, Electronics and communiaction Engineering, <br>Sri Venkateswara University College of Engineering,<br>Tirupati.</p>
+<h4 class="card-title">Work:</h4>
+<p class="card-text">Written JavaScript code for Level-3 total  <strong>7 Difficult Problems.</strong> <br>Assisted in creating <strong>Dynamic Grids.</strong><br>Applied <strong>CSS</strong> to Matrices problems.</p>
+
+</div>
+</div>
+
+<br>
+<br>
+<div class="card" style="width: 40rem;">
+<div class="card-body">
+ <h3 class="card-title">T Hema Madhuri</h3>
+ <br>
+ <p class="card-text">3<sup>rd</sup> year, Electronics and communiaction Engineering, <br>Sri Venkateswara University College of Engineering,<br>Tirupati.</p>
+<h4 class="card-title">Work:</h4>
+<p class="card-text">Created User Interactive <strong> Home Page</strong>.<br>Played a major role in creating <strong>Basic Template</strong> Structure for User Interface.<br>Modified the sidepanel with <strong>Interactive Styles.</strong></p>
+
+</div>
+</div>
+
+<br>
+<br>
+<div class="card" style="width: 40rem;">
+<div class="card-body">
+ <h3 class="card-title">M Sravya</h3>
+ <br>
+ <p class="card-text">3<sup>rd</sup> year, Electronics and communiaction Engineering, <br>Sri Venkateswara University College of Engineering,<br>Tirupati.</p>
+<h4 class="card-title">Work:</h4>
+<p class="card-text">Worked upon creating Wonderful <strong>Sidepanel</strong> .<br>Applied <strong>CSS</strong> to Calculus problems.<br>Played important role in <strong>Checking  Loop-holes</strong> in web pages and corrected them.</p>
+
+</div>
+</div>
+
+
+
+  <br>
+  <br>
+  <br>
+  <div style="width:900px;">
+    <h5 align=center>This Website is basically designed to provide guidance in learning <strong>Enginnering Mathematics</strong> mainly in the topics like Matrices and Calculus.Student gets answer to a problem dynamically in step by step manner for given inputs.We hope this project will help the Students in Engineering Mathematics to large extent and they will lot of Fun!</h5>
+<br>
+
+  </div>
+  <div style="width:900px;">
+    <h5 align=center>Please provide your valuable Suggestion and Feedback in the form below:</h5>
+
+
+  </div>
+<div style="width:900px;">
+  <div class="row" style="margin: 0 auto;">
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="fullName">
+                </div>
+                <div class="mb-3">
+                    <label for="email_id" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email_id">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Suggestions</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div><br>
+                <button type="submit" class="submit" style="width: 40%; margin: 0 auto;" onclick="sendMail()" value="Send">Send</button>
+            </div>
+
+</div>
+
+
+</div>

@@ -263,13 +263,23 @@ padding:7px 7px 8px 8px;
 .sidepanel j:active{
   opacity:0.5;
 }
+.sidepanel .homebtn1 {
+  position: absolute;
+  top:15px;
+  left: 100px;
+  font-size: 20px;
+  cursor: pointer;
+
+}
 .sidepanel .homebtn {
   position: absolute;
-  top: 0;
+  text-align: center;
+
+  top: 15px;
   left: 2px;
-  font-size: 40px;
-  cursor: pointer;
   font-size: 20px;
+  cursor: pointer;
+
 }
 
 .openbtn {
