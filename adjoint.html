@@ -5,26 +5,16 @@ title: Adjoint Matrix
 
 <style>
 
-.grid-container {
-  display: grid;grid-template-columns: auto auto auto auto;background-color: ;padding: 5px;width: 10px;
 
-}
-.grid-item {
-
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
 
 </style>
 
 <script type="text/javascript">
-    var str="";
+  var s="";
   function func() {
     var n=document.getElementById('n').value;
     n=parseInt(n);
-
+  var str="";
     document.getElementById('ma').innerHTML="";
     for(let i=0;i<n;i++)
     {
@@ -33,7 +23,7 @@ title: Adjoint Matrix
     }
     const dStyle = document.querySelector('style');
     dStyle.innerHTML = `.grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;}`;
-
+    s=str;
     for(let i=0;i<n*n;i++)
     {
       var div = document.createElement('div'); // is a node
@@ -56,7 +46,7 @@ title: Adjoint Matrix
 <script type="text/javascript">
 function fun() {
   const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
-  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
+  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${s};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
 
 
   document.getElementById('man2').innerHTML="";
@@ -141,17 +131,10 @@ document.getElementById('a2').innerHTML="Adjoint of given Matrix is: ";
    </div>
   <div class="paragraph">
 
+<br>
 
-
-  <p>The inverse of matrix is another matrix, which on multiplication with the given matrix gives the multiplicative identity. For a matrix A, its inverse is A<sup>-1</sup>, and A.A<sup>-1</sup> = A<sup>-1</sup>·A = I, where I is the identity matrix. The matrix whose determinant is non-zero and for which the inverse matrix can be calculated is called an invertible matrix.</p>
-  <p>The inverse matrix formula for a matrix A is given as,
-
-  A-1 = adj(A)/|A|; |A| ≠ 0
-  where A is a square matrix.<br>
-  Note: For inverse of a matrix to exist.<br>
-  The given matrix should be a square matrix.<br>
-  The determinant of the matrix should not be equal to zero.<br>
-
+<p>Adjoint of matrix is transpose of Cofactor matrix.</p>
+<p>To find cofactor matrix we need to find majors for each element in the matrix.</p><br>
   </div>
 <h4>Example:</h4>
 

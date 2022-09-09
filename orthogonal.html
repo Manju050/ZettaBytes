@@ -8,17 +8,18 @@ title: Orthogonal Matrix
     </style>
 
     <script type="text/javascript">
-      var str="";
+      var s="";
       function func() {
         var n=document.getElementById('n').value;
         n=parseInt(n);
-
+  var str="";
         document.getElementById('ma').innerHTML="";
         for(let i=0;i<n;i++)
         {
           str=str+"auto ";
 
         }
+        s=str;
         const dStyle = document.querySelector('style');
         dStyle.innerHTML = `.grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;}`;
 
@@ -42,7 +43,7 @@ title: Orthogonal Matrix
     <script type="text/javascript">
     function fun() {
       const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
-      dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
+      dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${s};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
 
 
       document.getElementById('man').innerHTML="";
@@ -135,16 +136,17 @@ title: Orthogonal Matrix
     <h4 style="text-decoration-line: underline;">
       <strong>Orthogonal of a Matrix</strong></h4>
       <p>The matrix is said to be an orthogonal matrix if the product of a matrix and its transpose gives an identity value.<br>
-        Suppose A is a square matrix with real elements and of n x n order and AT is the transpose of A. Then according to the definition, if, AT = A-1 is satisfied, then,<br>
+        Suppose A is a square matrix with real elements and of n x n order and AT is the transpose of A. Then according to the definition, if, AT = A-1 is satisfied, then,<br></p>
+        Where ‘I’ is the identity matrix, A-1 is the inverse of matrix A, and ‘n’ denotes the number of rows and columns.<br>
+        Note:<br>
+
+        All the orthogonal matrices are invertible. Since the transpose holds back the determinant, therefore we can say, the determinant of an orthogonal matrix is always equal to the -1 or +1.<br>
+        All orthogonal matrices are square matrices but not all square matrices are orthogonal.<br><br>
+
 <img src="https://www.algebrapracticeproblems.com/wp-content/ql-cache/quicklatex.com-b89aba63aab9a788f2e750d66c93316c_l3.svg" alt="">
 <br>
 
-Where ‘I’ is the identity matrix, A-1 is the inverse of matrix A, and ‘n’ denotes the number of rows and columns.<br>
-Note:<br>
 
-All the orthogonal matrices are invertible. Since the transpose holds back the determinant, therefore we can say, the determinant of an orthogonal matrix is always equal to the -1 or +1.<br>
-All orthogonal matrices are square matrices but not all square matrices are orthogonal.
-      </p>
       <br>
       <br>
       <p >Now, Let's jump in to have fun with, <strong>Practically trying them...</strong></p>

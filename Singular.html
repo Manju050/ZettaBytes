@@ -7,17 +7,18 @@ title: Singular or Non-singular matrix
   </style>
 
 <script type="text/javascript">
-  var str="";
+  var s="";
   function func() {
     var n=document.getElementById('n').value;
     n=parseInt(n);
-
+  var str="";
     document.getElementById('ma').innerHTML="";
     for(let i=0;i<n;i++)
     {
       str=str+"auto ";
 
     }
+    s=str;
     const dStyle = document.querySelector('style');
     dStyle.innerHTML = `.grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;}`;
 
@@ -43,7 +44,7 @@ title: Singular or Non-singular matrix
 <script type="text/javascript">
 function fun() {
   const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
-  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
+  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${s};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
 
 
   document.getElementById('man').innerHTML="";
@@ -106,9 +107,10 @@ document.getElementById('a2').innerHTML="Determinant of given Matrix is "+res+st
    <h2 style="color:white;" ><strong>Singular or Non-singular Matrix</strong></h2>
   </div>
   <div class="paragraph">
-To find a matrix is whether Singular or Non-Singular first we need to find it's Determinant value. <br>
-If the value of determinant is Zero then it is a Singular Matrix. <br>
-If the value of determinant is Non-Zero then it is a Non-Singular Matrix.
+    <br>
+To find a matrix is whether Singular or Non-Singular first we need to find it's Determinant value. <br><br>
+If the value of determinant is Zero then it is a Singular Matrix. <br><br>
+If the value of determinant is Non-Zero then it is a Non-Singular Matrix.<br><br>
 
   </div>
 <img src="determinant.jpeg" alt="">

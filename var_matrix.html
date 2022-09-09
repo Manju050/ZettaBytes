@@ -8,17 +8,18 @@ title: Variable Matrix and Singularity
 </style>
 
 <script type="text/javascript">
-var str="";
+var s="";
   function func() {
     var n=document.getElementById('n').value;
     n=parseInt(n);
-
+  var str="";
     document.getElementById('ma').innerHTML="";
     for(let i=0;i<n;i++)
     {
       str=str+"auto ";
 
     }
+    s=str;
     const dStyle = document.querySelector('style');
     dStyle.innerHTML = `.grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;}`;
 
@@ -45,7 +46,7 @@ var str="";
 //java script code for taking the input from grids and applying logic.
 function fun() {
   const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
-  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
+  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${s};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
 
 
 
@@ -128,9 +129,11 @@ document.getElementById('a2').innerHTML="The determinant equation of matrix is: 
  <div class="main-heading">
  <h2><strong>Variable Matrix and Singularity</strong></h2></div>
  <div class="paragraph">
+   <br>
    <p>A matrix is said to be variable if it contains the elements like x,x^2 or 2*x.</p>
    <p>This variable matrix can become singular for some specific values of x.</p>
    <p>In this problem we are going to find out that x values for which matrix becomes Singular.</p>
+   <br>
  </div>
  <h5>Example of variable Matrix:</h5>
 <img src="varMat.jpeg" alt="">
@@ -155,7 +158,6 @@ document.getElementById('a2').innerHTML="The determinant equation of matrix is: 
  <!--  given matrix takes the id = a1 to show on the web page    -->
 <br><br>
 <h3 id="out" style="font-weight: bold;" >OUTPUT SECTION:</h3>
-<br>
 <br>
  <div class="paragraphout">
 

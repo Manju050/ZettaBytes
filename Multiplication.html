@@ -10,9 +10,9 @@ title: Multiplication of two matrices
 
 <!--java script code for creating interactive grids-->
 <script type="text/javascript">
-  var str="";
+  var t="";
   function func() {
-
+  var str="";
     var n=document.getElementById('n').value;
     n=parseInt(n);
      //defining the string str  to set auto for grid container according to the order of matrix
@@ -24,6 +24,8 @@ title: Multiplication of two matrices
     }
     const dStyle = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
     dStyle.innerHTML = `.grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;}`;
+
+t=str;
 
     for(let i=0;i<n*n;i++)
     {
@@ -68,7 +70,7 @@ document.getElementById("yy").innerHTML="Enter the Second Matrix B";
 //java script code for taking the input from grids and applying logic.
 function fun() {
   const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
-  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
+  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${t};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
 
 
 
@@ -178,24 +180,22 @@ var string="";
          </div>
 
          <div class="paragraph">
+           <br>
 
-           <p> Matrix multiplication, also known as matrix product and the multiplication of two matrices, produces a single matrix. It is a type of binary operation. If A and B are the two matrices, then the product of the two matrices A and B are denoted by: C = AB.
-           for examle:
+           <p> Matrix multiplication, also known as matrix product and the multiplication of two matrices, produces a single matrix.<br><br>
            If A is an m × n matrix and B is an n × p matrix,
-
-           <p>
-           the matrix product C = AB (denoted without multiplication signs or dots) is defined to be the m × p matrix </p>
-         <p>
-           such that
-
-         <p>for i = 1, ..., m and j = 1, ..., p.
+           the matrix product C = AB (denoted without multiplication signs or dots) is defined to be the m × p matrix. </p>
+        <p>for i = 1, ..., m and j = 1, ..., p.
 
            That is, the entry Cij of the product is obtained by multiplying term-by-term the entries of the ith row of A and the jth column of B, and summing these n products. In other words,Cij is the dot product of the ith row of A and the jth column of B.
 
            Therefore, AB can also be written as
 
            </p>
+           <br>
          </div>
+         <br>
+        <br>
          <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9196c0c24ad20c3b18582bc78785fa405d91c7c3" alt="">
       <br><br>
          <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7d3ce5d06e84e1a8575ce6f1d47a90d006baf628" alt="">
@@ -231,7 +231,7 @@ var string="";
 <br>
 <h3 id="out" style="font-weight: bold;" >OUTPUT SECTION:</h3>
 <br>
-<br>
+
 <div class="paragraphout">
 
   <br>

@@ -8,17 +8,18 @@ title: Determinant of a Matrix
   </style>
 
 <script type="text/javascript">
-  var str="";
+  var s="";
   function func() {
     var n=document.getElementById('n').value;
     n=parseInt(n);
-
+  var str="";
     document.getElementById('ma').innerHTML="";
     for(let i=0;i<n;i++)
     {
       str=str+"auto ";
 
     }
+    s=str;
     const dStyle = document.querySelector('style');
     dStyle.innerHTML = `.grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;}`;
 
@@ -44,7 +45,7 @@ title: Determinant of a Matrix
 <script type="text/javascript">
 function fun() {
   const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
-  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
+  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${s};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
 
   document.getElementById('man').innerHTML="";
   var n=document.getElementById('n').value;
@@ -101,7 +102,7 @@ document.getElementById('a2').innerHTML="Determinant of given Matrix is: |A|= "+
   </div>
   <div class="paragraph">
 
-
+<br>
     <p>
       The determinant of a matrix is the scalar value or number calculated using a square matrix. The square matrix could be 2×2, 3×3, 4×4, or any type, such as n × n, where the number of column and rows are equal. If S is the set of square matrices, R is the set of numbers (real or complex) and f : S → R is defined by f (A) = k, where A ∈ S and k ∈ R, then f (A) is called the determinant of A.
 <p/>
@@ -109,8 +110,9 @@ document.getElementById('a2').innerHTML="Determinant of given Matrix is: |A|= "+
 Symbol:
 The determinant of a matrix is represented by two vertical lines or simply by writing det and writing the matrix name. eg. |A|, det(A), det A</p>
 
-
+<br>
   </div>
+  <br>
   <h4>Example:</h4>
   <img src="determinant.jpeg" alt="">
   <br>
@@ -134,10 +136,10 @@ The determinant of a matrix is represented by two vertical lines or simply by wr
   <br>
 <h4 id="out" style="font-weight: bold;" >OUTPUT SECTION:</h4>
 <br>
-<br>
+
 <div class="paragraphout">
   <br>
-  <br>
+
   <h3 id="a1"></h3>
   <table align="center" id="man" class="matrix">
 
@@ -145,5 +147,5 @@ The determinant of a matrix is represented by two vertical lines or simply by wr
   <br>
   <br>
   <h3 id="a2"></h3>
-
+<br>
 </div>

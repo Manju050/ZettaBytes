@@ -8,17 +8,18 @@ title: RANK OF MATRIX
   </style>
 
 <script type="text/javascript">
-  var str="";
+  var s="";
   function func() {
     var n=document.getElementById('n').value;
     n=parseInt(n);
-
+  var str="";
     document.getElementById('ma').innerHTML="";
     for(let i=0;i<n;i++)
     {
       str=str+"auto ";
 
     }
+    s=str;
     const dStyle = document.querySelector('style');
     dStyle.innerHTML = `.grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;}`;
 
@@ -45,7 +46,7 @@ title: RANK OF MATRIX
 function fun() {
 
   const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
-  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
+  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${s};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
 
 
   document.getElementById('man').innerHTML="";
@@ -222,19 +223,18 @@ document.getElementById('rank').innerHTML = "The Rank of the matrix is : "+rankO
 
 
     <p>
-      The maximum number of its linearly independent columns (or rows ) of a matrix is called the rank of a matrix. The rank of a matrix cannot exceed the number of its rows or columns.
+      The maximum number of its linearly independent columns (or rows ) of a matrix is called the rank of a matrix.<br><br>
 
-If we consider a square matrix, the columns (rows) are linearly independent only if the matrix is nonsingular. In other words, the rank of any nonsingular matrix of order m is m. Rank of a matrix A is denoted by ρ(A).
+If we consider a square matrix, the columns (rows) are linearly independent only if the matrix is nonsingular.<br><br> In other words, the rank of any nonsingular matrix of order m is m. Rank of a matrix A is denoted by ρ(A).<br><br>
 
-The rank of a null matrix is zero. A null matrix has no non-zero rows or columns. So, there are no independent rows or columns. Hence the rank of a null matrix is zero.
-<p/>
+</p>
 <p>
 Symbol:
-The Rank of a matrix is represented by  ρ( A ) or Rank(A).If A is of order n×n and |A| ≠ 0, then the rank of A = n.
+The Rank of a matrix is represented by  ρ( A ) or Rank(A).If A is of order n×n and |A| ≠ 0, <br><br>then the rank of A = n.
 
 If A is of order n×n and |A| = 0, then the rank of A will be less than n.</p>
 
-
+<br>
   </div>
   <br>
   <br>

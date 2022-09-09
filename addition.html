@@ -10,10 +10,10 @@ title: Addition of two matrices
 
 <!--java script code for creating interactive grids-->
 <script type="text/javascript">
-  var str="";
+var t="";
   function func() {
 
-
+    var str="";
     var n=document.getElementById('n').value;
     n=parseInt(n);
      //defining the string str  to set auto for grid container according to the order of matrix
@@ -23,6 +23,7 @@ title: Addition of two matrices
       str=str+"auto ";
 
     }
+    t=str;
     const dStyle = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
     dStyle.innerHTML = `.grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;}`;
 
@@ -70,7 +71,7 @@ document.getElementById("yy").innerHTML="Enter the Second Matrix B";
 
 function fun() {
   const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
-  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
+  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${t};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
 
   document.getElementById("add").innerHTML="";
     document.getElementById("mat1").innerHTML="";
@@ -182,7 +183,7 @@ var res_add=math.add(str1,str2);//using math.add for adding two matrices.
    <h2 style="color:white;" ><strong>Addition of two Matrices</strong></h2>
   </div>
   <div class="paragraph">
-
+<br>
 
     <p>
       Two matrices A and B are said to be conformable for addition if they have the same order (i.e., same number of rows and columns).  </p>
@@ -194,7 +195,7 @@ var res_add=math.add(str1,str2);//using math.add for adding two matrices.
 
   <h5>Note: If A and B be matrices of different orders, then A + B is not defined.</h5>
 
-
+<br>
   </div>
   <h4>For Example:</h4>
   <br>

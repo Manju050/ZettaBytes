@@ -9,17 +9,18 @@ title: Singular or Non-singular matrix
   </style>
 
 <script type="text/javascript">
-  var str="";
+  var s="";
   function func() {
     var n=document.getElementById('n').value;
     n=parseInt(n);
-
+  var str="";
     document.getElementById('ma').innerHTML="";
     for(let i=0;i<n;i++)
     {
       str=str+"auto ";
 
     }
+    s=str;
     const dStyle = document.querySelector('style');
     dStyle.innerHTML = `.grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;}`;
 
@@ -45,7 +46,7 @@ title: Singular or Non-singular matrix
 <script type="text/javascript">
 function fun() {
   const dtm = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
-  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
+  dtm.innerHTML = `.matrix:before { left: -6px;border-right: 0;display: block;} .grid-container{display:grid;align:center;grid-template-columns: ${s};padding: 5px;width: 10px;} .matrix:after { right: -6px;border-left: 0;display: block;}.paragraphout{background-color: lightgrey;margin-top:25px;font-size: 18px;line-height: 28.5px;color:black;padding-left: 15px;padding-right: 30px;margin-right:40px;text-align:left;display: block;} #out{display:block}`;
 
 
   document.getElementById('man').innerHTML="";
@@ -116,14 +117,16 @@ document.getElementById('a2').innerHTML=res;
   </div>
   <br>
   <div class="paragraph">
-  In linear algebra, a symmetric matrix is defined as the square matrix that is equal to its transpose matrix. <br>
-  The transpose matrix of any given matrix A can be given as A<sup>T</sup>.<br>
-  A symmetric matrix A therefore satisfies the condition, A = A<sup>T</sup>. <br>
+    <br>
+  In linear algebra, a symmetric matrix is defined as the square matrix that is equal to its transpose matrix. <br><br>
+  The transpose matrix of any given matrix A can be given as A<sup>T</sup>.<br><br>
+  A symmetric matrix A therefore satisfies the condition, A = A<sup>T</sup>. <br><br>
   Among all the different kinds of matrices, symmetric matrices are one of the most important ones that are used widely in machine learning.
-
-
+<br>
+<br>
 
   </div>
+  <br>
   <h4>Example:</h4>
   <img src="https://th.bing.com/th/id/R.ef073752d8bd131498bc95d5371ee3c9?rik=3VgeGkwQ94hy%2fQ&riu=http%3a%2f%2fcodeforwin.org%2fwp-content%2fuploads%2f2015%2f08%2fSymmetric-matrix.png&ehk=xwQ1jqVaBPb3PObjnwN9oxrpZtKGvIHMNjT9JBTSPrE%3d&risl=&pid=ImgRaw&r=0" alt="">
   <br>
