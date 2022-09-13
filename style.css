@@ -86,7 +86,7 @@ transition: opacity 0.15s;
   box-shadow: 5px 5px 20px rgba(0,0,0,0.15);
 }
 .paragraph{
-  background-image:url("https://cdn.wallpapersafari.com/70/60/bvnZrL.jpg") ;
+  background-image:url("sidepara.jpg") ;
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-size:100% 100%;
@@ -102,7 +102,7 @@ transition: opacity 0.15s;
   text-align:left;
 }
 .paragraphout{
-  background-image:url("https://cdn.wallpapersafari.com/70/60/bvnZrL.jpg") ;
+  background-image:url("sidepara.jpg") ;
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-size:100% 100%;
@@ -219,7 +219,7 @@ z-index: 1;
 height:99vh;
 top: 0;
 left: 0;
-background-image:url("https://cdn.wallpapersafari.com/70/60/bvnZrL.jpg") ;
+background-image:url("sidepara.jpg") ;
 background-repeat:no-repeat;
 background-attachment:fixed;
 background-size:100% 100%;
