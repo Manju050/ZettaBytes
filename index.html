@@ -1,109 +1,118 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 <style>
 
 
-    body{
-      background-image:url("https://th.bing.com/th/id/OIP.54aDRJHlX7jC15ANjLWg-QHaEo?pid=ImgDet&rs=1");
-              background-repeat:no-repeat;
-              background-attachment:fixed;
-              background-size:100% 100%;
+  body{
+    background-image:url('hb.jpg');
+               background-repeat:no-repeat;
+            background-attachment:fixed;
+            background-size:100% 100%;
 
-    }
-    .container{
-      max-width:700px;
-      width: 100%;
-      height: 50vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      right: 0;
-      left: 0;
-      top: 0;
-      bottom:0;
-      margin:auto;
+  }
+  .container{
+    max-width:700px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom:0;
+    margin:auto;
 
-    }
+  }
 
 
-    .level1{
+  .level1{
 
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:20px;
 trasnition:0.15s;
 
 
+  }
+  .button1
+  {
+    border-radius:18px;
+    display:inline-block;
+    color:black;
+    background-color:#6BCAE2;
+    border-color:grey;
+    border-style:solid;
+    border-width:4px;
+    font-family:Arial;
+    font-size:25px;
+    text-align:center;
+    font-weight:bold;
+    padding-top:10px;
+      padding-bottom:10px;
+        padding-right:60px;
+          padding-left:60px;
+    cursor:pointer;
+  transition: background-color, opacity,0.15s;
     }
-    .button1
-    {
-      border-radius:18px;
-      display:inline-block;
-      color:black;
-      background-color:#6BCAE2;
-      border-color:grey;
-      border-style:solid;
-      border-width:4px;
-      font-family:Arial;
-      font-size:25px;
-      text-align:center;
-      font-weight:bold;
-      padding-top:10px;
-        padding-bottom:10px;
-          padding-right:60px;
-            padding-left:60px;
-      cursor:pointer;
-    transition: background-color, opacity,0.15s;
-      }
 .button1:hover{
-  background-color:#63C5DA;
+background-color:#63C5DA;
 border-color:black;
-  padding-right:88px;
-  padding-left:88px;
-  padding-top:14px;
-  padding-bottom:14px;
+padding-right:88px;
+padding-left:88px;
+padding-top:14px;
+padding-bottom:14px;
 opacity:0.8;
- margin-top: -8px;
+margin-top: -8px;
+
+}
+.button1:active{
+  background-color:white;
+  border-color:black;
+  border-style:solid;
+  border-width:4px;
 
 }
 .level2
 {
-  margin-top:53px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:20px;
-  trasnition:0.15s;
+margin-top:53px;
+display:flex;
+justify-content:center;
+align-items:center;
+height:20px;
+trasnition:0.15s;
 
 }
 
 .button2
 {
-  border-radius:18px;
-  display:inline-block;
-  color:black;
-  background-color:#6BCAE2;
-  border-color:grey;
-  border-style:solid;
-  border-width:4px;
-  font-family:Arial;
-  font-size:25px;
-  text-align:center;
-  font-weight:bold;
-  padding-top:10px;
-    padding-bottom:10px;
-      padding-right:60px;
-        padding-left:60px;
-  cursor:pointer;
+border-radius:18px;
+display:inline-block;
+color:black;
+background-color:#6BCAE2;
+border-color:grey;
+border-style:solid;
+border-width:4px;
+font-family:Arial;
+font-size:25px;
+text-align:center;
+font-weight:bold;
+padding-top:10px;
+  padding-bottom:10px;
+    padding-right:60px;
+      padding-left:60px;
+cursor:pointer;
 transition: background-color, opacity,0.15s;
-  }
+}
 .button2:hover{
 background-color:#63C5DA;
 opacity:0.8;
@@ -115,36 +124,43 @@ padding-bottom:14px;
 margin-top: -8px;
 
 }
+.button2:active{
+  background-color:white;
+  border-color:black;
+  border-style:solid;
+  border-width:4px;
+
+}
 .level3
 {
-  margin-top:53px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:20px;
-  trasnition:0.15;
+margin-top:53px;
+display:flex;
+justify-content:center;
+align-items:center;
+height:20px;
+trasnition:0.15;
 
 }
 .button3{
-  border-radius:18px;
-  display:inline-blocw
-  k;
-  color:black;
-  background-color:#6BCAE2;
-  border-color:grey;
-  border-style:solid;
-  border-width:4px;
-  font-family:Arial;
-  font-size:25px;
-  text-align:center;
-  font-weight:bold;
-  padding-top:10px;
-    padding-bottom:10px;
-      padding-right:60px;
-        padding-left:60px;
-  cursor:pointer;
+border-radius:18px;
+display:inline-blocw
+k;
+color:black;
+background-color:#6BCAE2;
+border-color:grey;
+border-style:solid;
+border-width:4px;
+font-family:Arial;
+font-size:25px;
+text-align:center;
+font-weight:bold;
+padding-top:10px;
+  padding-bottom:10px;
+    padding-right:60px;
+      padding-left:60px;
+cursor:pointer;
 transition: background-color,border-color, opacity,0.15s;
-  }
+}
 .button3:hover{
 background-color:#63C5DA;
 opacity:0.8;
@@ -155,40 +171,164 @@ padding-top:14px;
 padding-bottom:14px;
 margin-top: -8px;
 }
+.button3:active{
+  background-color:white;
+  border-color:black;
+  border-style:solid;
+  border-width:4px;
+
+}
 .menubar {
-  display: inline-block;
-  cursor: pointer;
+display: inline-block;
+cursor: pointer;
 }
 
 .bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
+width: 35px;
+height: 5px;
+background-color: #333;
+margin: 6px 0;
+transition: 0.4s;
 }
 
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+-webkit-transform: rotate(45deg) translate(-8px, -8px);
+transform: rotate(45deg) translate(-8px, -8px);
 }
+.page{
+display:flex;
+flex-direction: column;
 
+}
+.top{
+
+font-family:italic;
+background-color: blue;
+border-radius: 13px;
+border-width:3px;
+border-style: solid;
+border-color:rgb(245, 244, 244) ;
+padding-top:50px;
+padding-bottom:24px;
+text-align: center;
+display: block;
+color:black;
+
+margin-bottom:4px;
+}
+.project{
+display:flex;
+flex-direction:row;
+
+
+}
+.left{
+/border-radius:95px;/
+border-style: solid;
+background-image:url("https://media.istockphoto.com/vectors/horizontal-vector-illustration-of-an-empty-sky-blue-coloured-grungy-vector-id1139678803?k=20&m=1139678803&s=612x612&w=0&h=jGhaWq_34qr6OQlJMlf4doDv7txteI0fVPDFG3sPzew=") ;
+background-repeat:no-repeat;
+
+background-attachment:fixed;
+background-size:100% 100%;
+
+border-width: 3px;
+border-color: white;
+flex:2;
+max-width: 350px;
+height:180vh;
+max-height:1000vh;
+
+
+}
+.left:hover{
+border-color:black;
+border-width:2.8px;
+border-radius:6px;
+transition:border-width,border-radius, background-image,0.15s;
+  background-image:url("https://th.bing.com/th/id/OIP.-VPz_oR05A2WNVGbHPfB9gHaE8?w=272&h=181&c=7&r=0&o=5&dpr=2.62&pid=1.7");
+}
+.right{
+flex:4;
+margin-left:10px;
+
+}
 
   </style>
 
   </head>
   <body>
-      <h1 align="center" >HEY!....Welcome to this website.Hope your doing well.</h1>
-      <div align=center>
-<p style="font-size: 20px;"><br>Here you will find 25 Mathematic Concepts in subjects like Matrices and Calculus <br>with problem Solving tool which enables you to get answers to your questions step by step.<br>Concepts are divided based on thier levels.Hope you will have great Experience and Fun!</p>        
-      </div>
+
+
+        <div class="project">
+
+
+      <div class="left">
+
+
+
+         <p style="font-size: 25px;
+         margin-top:17px;
+        text-align: center;
+         font-weight: bold;
+         background-color:black;
+         color:white;
+         border-radius:50px;
+
+         "> <strong>Read me &#x21;</strong></p>
+         <h4><strong>This website is basically designed to help students in learning Calculus and Matrices practically.In this site we have covered total 25 topics in calculus and Matrices and they are sorted according to their levels as level-1,level-2,level-3. </strong></h4>
+         <p style="font-size: 24px;
+         margin-top: 4px;
+      text-align: left;
+      margin-left:4px;
+         font-weight: bold;"><u> Calculus</u></p>
+        <ul style="font-size:19.6px;">
+
+    <li>  Calculus is the mathematical study of <strong>continuous change</strong>.</li>
+    <li> Infinitesimal calculus was developed independently in the late <strong> 17th</strong> century by <strong>Isaac Newton </strong>and <strong>Gottfried Wilhelm Leibniz</strong>.</li>
+    </ul>
+
+
+    <p style="font-size:17.7px;
+    justify-content:center;
+    margin-left:5px;
+    margin-right:8px;">&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Today, &nbsp; <a href="https://en.wikipedia.org/wiki/Calculus" style="color:blue; font-weight:bold; font-size:20px; cursor:pointer;">calculus</a> &nbsp;  has widespread uses in science, engineering, and social science. For example, it can be used with linear algebra to find the "best fit" linear approximation for a set of points in a domain. Maxwell's theory of electromagnetism and Einstein's theory of general relativity are also expressed in the language of differential calculus. In economics, calculus allows for the determination of maximal profit by providing a way to easily calculate both marginal cost and marginal revenue.</p>
+    <p style="font-size: 24px;
+    margin-top: 4px;
+ text-align: left;
+   margin-left:4px;
+    font-weight: bold;"><u> Matrices</u></p>
+   <ul style="font-size:19.6px;">
+
+  <li>Matrices are <strong>rectangular arrays </strong>of integers with rows and columns.</li>
+  <li> <strong>Arthur Cayley was(16/08/1821)</strong> a great mathematician and known as the <strong>father of matrices</strong>. In <strong><u>1858</u></strong>, Arthur Cayley published the <strong>theoretical definition of the matrix</strong> in his Memoir on the Theory of Matrices.</li>
+<li>Cayley first applied them to the study of  <strong>systems of linear equations</strong>.</li>
+</ul>
+<p style="font-size:17.7px;
+justify-content:center;
+margin-left:5px;
+margin-right:8px;">&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="https://en.wikipedia.org/wiki/Matrix_(mathematics)
+" style="color:blue; font-weight:bold; font-size:20px; cursor:pointer;">Matrices</a> &nbsp;  have many practical uses in everyday life. For example, most computers have numeric values displayed as two-dimensional lists on their screens,it is a matrix. And as well, matrix find its application in spreadsheets, Simulations, Physics, Genetics, Cognitive science, Convex functions.  Matrices are also used in robotics and automation to help with the computations of different objects in the world.
+</p>
+            <p style="font-weight:bold;
+            font-size:25px;
+            margin-top:0px; text-align:center;">&#x23AF;&#x23AF; &#65121; &#65121; &#65121; &#x23AF;&#x23AF;</p>
+          </div>
+          <div class="right">
+<p style="margin-left:68px;
+margin-top:24px;margin-bottom: 0px;
+font-family: 'Dancing Script', cursive;
+font-weight:bold;"><span style="font-size:62px;">Math&#8211;</span> <span style="font-size:53px;"> A <strong>pinnacle</strong> indeed&#x2c;</span></p>
+  <p style="margin-left:295px;
+  margin-top:3px;
+  font-size:29.5px;font-family: 'Dancing Script', cursive;
+  font-weight:bold;"> Let&#39;s have fun <b>conquering</b> a little of it .... </p>
     <div class="container">
 <div class="level1">
   <a href="addition.html"><button class="button1">Level-1</button></a>
@@ -202,7 +342,7 @@ margin-top: -8px;
   <a href="var_matrix.html"><button class="button3">Level-3</button></a>
 
 </div>
-</div>
+
 
 
   </body>
