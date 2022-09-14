@@ -124,11 +124,16 @@
 
        </div>
 
-       <button class="openbtn" onclick="openNav()">PROBLEMS</button>
+       <button class="openbtn"  id="sidebtn"onclick="openNav()">PROBLEMS</button>
 
 
        <script>
 
+       document.onclick = function(e){
+              if(e.target.id !== 'mySidepanel' && e.target.id !== 'sidebtn'){
+                document.getElementById("mySidepanel").style.width = "0%";
+              }
+            }
        function openNav() {
          document.getElementById("mySidepanel").style.width = "290px";
 
@@ -185,9 +190,13 @@
            }
          });
        }
+
        </script>
-         </div>
+</div>
+<div style="padding-left:13%;">
     {{ content }}
+</div>
+
   </body>
   <footer id="footer"></footer>
 </html>
