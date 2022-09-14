@@ -25,14 +25,14 @@ var t="";
     }
     t=str;
     const dStyle = document.querySelector('style');//changing the contents of style tag to chnage the css of grid that is for input matrix1
-    dStyle.innerHTML = `.grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 5px;width: 10px;}`;
+    dStyle.innerHTML = `.grid-container{display:grid;align:center;grid-template-columns: ${str};padding: 7%;width: 10px;}`;
 
     for(let i=0;i<n*n;i++)
     {
       var div = document.createElement('div'); // creating a new  tag
       div.setAttribute('class', 'grid-item');//setting the div attribute to grid item
 
-      div.innerHTML=`<input id="${i}"  type="text" size=1px  value="">`;//creating a new input tag inside div item to take input values inside the grid
+      div.innerHTML=`<input id="${i}"  type="text" size=5%  value="">`;//creating a new input tag inside div item to take input values inside the grid
 
   document.getElementById("matrix1").appendChild(div);//appending the div to grid cntainer
   document.getElementById("y").innerHTML="Enter the First Matrix A" ;
@@ -48,7 +48,7 @@ document.getElementById("yy").innerHTML="Enter the Second Matrix B";
       var div = document.createElement('div'); // is a node
       div.setAttribute('class', 'grid-item');
 
-      div.innerHTML=`<input id="${1000+i}"  type="text" size=1px  value="">`;//creating a new input tag inside div item to take input values inside the grid
+      div.innerHTML=`<input id="${1000+i}"  type="text" size=5%  value="">`;//creating a new input tag inside div item to take input values inside the grid
 
   document.getElementById("matrix2").appendChild(div);//appending the div to grid cntainer
 

@@ -40,8 +40,8 @@
 
    .grid-item {
 
-     border: 1px solid  black;
-     padding: 5px;
+     border: 2px solid  black;
+     padding: 4px;
      font-size: 20px;
      align:center;
 
@@ -63,22 +63,22 @@ body{
 
 }
 .main-heading{
-padding-top:10px;
-padding-bottom:10px;
-padding-left:40px;
-padding-right:40px;
+padding-top:1%;
+padding-bottom:1%;
+padding-left:4%;
+padding-right:4%;
 display:inline-block;
-font-size: 25px;
-margin-left:250px;
+font-size: 30px;
+margin-left:25%;
 background-color:#555555;
 color:white;
 font-weight:bold;
-border-radius:5px;
-margin-top:20px;
+border-radius:10px;
+margin-top:3.5%;
 margin-bottom:15px:
 cursor:pointer;
 border-color: black;
-border-width: 2px;
+border-width: 20px;
 transition: opacity 0.15s;
 
 }
@@ -90,12 +90,12 @@ transition: opacity 0.15s;
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-size:100% 100%;
-  background-color: lightgrey;
-  margin-top:25px;
-  font-size: 18px;
+
+  margin-top:4%;
+  font-size: 20px;
   line-height: 28.5px;
   color:black;
-  padding-left: 15px;
+  padding-left: 18px;
   padding-right: 30px;
   padding-bottom: 10px;
   margin-right:40px;
@@ -144,22 +144,7 @@ background-color:#a9a9a;
 
 
 }
-.input-2{
-  border-radius:6px;
-  padding-left: 23px;
-  padding-right: 23px;
-  display:inline-block;
-  padding-top:10px;
-  padding-bottom:10px;
-background-color: lightgrey;
-  margin-bottom:20px;
-  margin-top: 0;
-}
-.input-2:hover{
-box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
-background-color:#a9a9a;
 
-}
 .submit{
 padding-right:18px;
   padding-left:18px;
