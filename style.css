@@ -61,6 +61,7 @@
 body{
   font-family: Arial, Roboto;
 
+
 }
 .main-heading{
 padding-top:1%;
@@ -92,7 +93,7 @@ transition: opacity 0.15s;
   background-size:100% 100%;
 
   margin-top:4%;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 28.5px;
   color:black;
   padding-left: 18px;
@@ -108,7 +109,7 @@ transition: opacity 0.15s;
   background-size:100% 100%;
   background-color: lightgrey;
   margin-top:25px;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 28.5px;
   color:black;
   padding-left: 15px;
@@ -201,7 +202,7 @@ background:#DCDCDC;
 width: 0;
 position: fixed;
 z-index: 1;
-height:99vh;
+height:100%;
 top: 0;
 left: 0;
 background-image:url("sidepara.jpg") ;
