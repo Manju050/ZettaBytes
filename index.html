@@ -1,10 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
     <meta name="viewport" content="width=device-width,initial-scale=0.5">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta charset="utf-8">
     <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,14 +33,16 @@
     top: 0;
     bottom:0;
     margin:auto;
+    padding-top: 500px;
 
   }
 
 
-  .level1{
+   .level1{
 
     display:flex;
     justify-content:center;
+    padding-left:60px;
     align-items:center;
     height:20px;
 trasnition:0.15s;
@@ -91,6 +92,7 @@ margin-top: -8px;
 margin-top:53px;
 display:flex;
 justify-content:center;
+padding-left:60px;
 align-items:center;
 height:20px;
 trasnition:0.15s;
@@ -140,6 +142,7 @@ margin-top: -8px;
 margin-top:53px;
 display:flex;
 justify-content:center;
+padding-left:60px;
 align-items:center;
 height:20px;
 trasnition:0.15;
@@ -234,11 +237,12 @@ flex-direction:row;
 
 }
 .left{
-/border-radius:95px;/
+/*border-radius:95px;*/
 border-style: solid;
-background-image:url("https://media.istockphoto.com/vectors/horizontal-vector-illustration-of-an-empty-sky-blue-coloured-grungy-vector-id1139678803?k=20&m=1139678803&s=612x612&w=0&h=jGhaWq_34qr6OQlJMlf4doDv7txteI0fVPDFG3sPzew=") ;
+/*background-image:url("https://media.istockphoto.com/vectors/horizontal-vector-illustration-of-an-empty-sky-blue-coloured-grungy-vector-id1139678803?k=20&m=1139678803&s=612x612&w=0&h=jGhaWq_34qr6OQlJMlf4doDv7txteI0fVPDFG3sPzew=") ;*/
 background-repeat:no-repeat;
-
+position: absolute;
+left: auto;
 background-attachment:fixed;
 background-size:100% 100%;
 
@@ -248,19 +252,23 @@ flex:2;
 max-width: 350px;
 height:200vh;
 display: inline-block;
+margin-top: 200px;
 
 
 }
-.left:hover{
+/*.left:hover{
 border-color:black;
 border-width:2.8px;
 border-radius:6px;
 transition:border-width,border-radius, background-image,0.15s;
   background-image:url("https://th.bing.com/th/id/OIP.-VPz_oR05A2WNVGbHPfB9gHaE8?w=272&h=181&c=7&r=0&o=5&dpr=2.62&pid=1.7");
-}
+}*/
 .right{
 flex:4;
-margin-left:10px;
+max-width: fit-content;
+margin:auto;
+padding-left: 20px;
+text-align: center;
 
 }
 
@@ -270,28 +278,33 @@ margin-left:10px;
   <body>
 
 
-        <div class="project">
-
-
-      <div class="left">
 
 
 
-         <p style="font-size: 25px;
-         margin-top:17px;
-        text-align: center;
-         font-weight: bold;
-         background-color:black;
-         color:white;
-         border-radius:50px;
 
-         "> <strong>Read me &#x21;</strong></p>
-         <h4><strong>This website is basically designed to help students in learning Calculus and Matrices practically.In this site we have covered total 25 topics in calculus and Matrices and they are sorted according to their levels as level-1,level-2,level-3. </strong></h4>
+
+
+          <div class="right">
+<p style="margin-left:68px;
+margin-top:24px;margin-bottom: 0px;
+font-family: 'Dancing Script', cursive;
+font-weight:bold;"><span style="font-size:62px;">Math&#8211;</span> <span style="font-size:53px;"> A <strong>pinnacle</strong> indeed&#x2c;</span></p>
+  <p style="margin-left:295px;
+  margin-top:3px;
+  font-size:29.5px;font-family: 'Dancing Script', cursive;
+  font-weight:bold;"> Let&#39;s have fun <b>conquering</b> a little of it .... </p>
+    <div class="container">
+      <br>
+      <br>
+      <br>
+      <br>
+      <h4><strong>This website is basically designed to help students in learning Calculus and Matrices practically.In this site we have covered total 25 topics in calculus and Matrices and they are sorted according to their levels as level-1,level-2,level-3 as below this web. </strong></h4>
          <p style="font-size: 24px;
          margin-top: 4px;
       text-align: left;
       margin-left:4px;
-         font-weight: bold;"><u> Calculus</u></p>
+         font-weight: bold;
+         margin-bottom: 20px;"><u> Calculus</u></p>
         <ul style="font-size:19.6px;">
 
     <li>  Calculus is the mathematical study of <strong>continuous change</strong>.</li>
@@ -323,29 +336,24 @@ margin-right:8px;">&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="https://en.
             <p style="font-weight:bold;
             font-size:25px;
             margin-top:0px; text-align:center;">&#x23AF;&#x23AF; &#65121; &#65121; &#65121; &#x23AF;&#x23AF;</p>
+            <div align=cente class="project">
+              <div>
+                <h3 style="font-weight: bold; margin-left: 60px;; font-size:30px; " >  PROBLEMS</h3>
+                <div class="level1">
+               <a href="addition.html"><button class="button1">Level-1</button></a>
+
+                   </div>
+                 <div class="level2">
+                   <a href="rank.html"><button class="button2">Level-2</button></a>
+
+             </div>
+             <div class="level3">
+               <a href="var_matrix.html"><button class="button3">Level-3</button></a>
+
+             </div>
+                 </div>
           </div>
-          <div class="right">
-<p style="margin-left:68px;
-margin-top:24px;margin-bottom: 0px;
-font-family: 'Dancing Script', cursive;
-font-weight:bold;"><span style="font-size:62px;">Math&#8211;</span> <span style="font-size:53px;"> A <strong>pinnacle</strong> indeed&#x2c;</span></p>
-  <p style="margin-left:295px;
-  margin-top:3px;
-  font-size:29.5px;font-family: 'Dancing Script', cursive;
-  font-weight:bold;"> Let&#39;s have fun <b>conquering</b> a little of it .... </p>
-    <div class="container">
-<div class="level1">
-  <a href="addition.html"><button class="button1">Level-1</button></a>
 
-      </div>
-    <div class="level2">
-      <a href="rank.html"><button class="button2">Level-2</button></a>
-
-</div>
-<div class="level3">
-  <a href="var_matrix.html"><button class="button3">Level-3</button></a>
-
-</div>
 
 
 
